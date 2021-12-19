@@ -1,0 +1,15 @@
+<div class="window">
+    <p class="object">Объекты</p>
+    <input type="text" placeholder="Поиск" #inp class="inp" [(ngModel)]="searchText">
+
+        <div *ngIf="(dataArray | filter: searchText).length > 0"  class="list-elem" routerLink='/list'>
+
+            <div *ngFor='let data of dataArray | filter: searchText; let i = index'>
+                <a (click)='isClicked(data.id)' [ngClass]="data.id == show() ? 'active-link' : 'link'" #link >
+                    <img src="../../assets/car.png" alt="CarLogo" class="list-img">
+                    <p class="link-text">{{data.name}}</p>
+                </a>
+                <hr>
+            </div>
+    </div>
+</div>

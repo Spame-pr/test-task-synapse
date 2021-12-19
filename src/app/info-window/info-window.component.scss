@@ -1,0 +1,60 @@
+.window{
+  position: absolute;
+  width:267px;
+  height: 95%;
+  left: 1138px;
+  top: 20px;
+  background-color:#FFFFFF;
+  z-index: 5;
+  border-radius: 9px;
+}
+.object{
+    font-size: 24px;
+    line-height: 28px;
+    text-indent: 16px;
+}
+.inp{
+    background: #F2F2F2;
+    border: none;
+    height: 33px;
+    width: 100%;
+    text-indent: 16px;
+    font-size: 13px;
+    line-height: 15px;
+   
+}
+::-webkit-input-placeholder {
+    color:#000000;
+ }
+ .list-elem{
+  font-size: 11px;
+  line-height: 13px;
+  :hover{
+    cursor: pointer;
+  }
+ }
+ .list-img{
+   margin: 11px 5px 7px 16px;
+   width: 13px;
+  height: 11px;
+ }
+.link{
+  display: flex;
+  flex-direction: row;
+  color: #000000;
+  text-decoration: none;
+  height: 26px;
+  width: 267px;
+}
+.active-link{
+  background: rgba(255, 245, 0, 0.4);
+  display: flex;
+  flex-direction: row;
+  color: #000000;
+  text-decoration: none;
+  height: 26px;
+  width: 267px;
+ }
+ hr{
+   margin:0;
+ }
